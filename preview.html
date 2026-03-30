@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Widget</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-size: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div id="clock"></div>
+
+<script>
+function updateClock() {
+  const now = new Date();
+  document.getElementById("clock").innerText =
+    now.toLocaleTimeString();
+}
+
+setInterval(updateClock, 1000);
+</script>
+
+</body>
+</html>
